@@ -1,1 +1,4 @@
-print('To be\n or not\n to be')
+salary = int(input())
+credit = int(input())
+commu = int(input())
+print(salary-credit-commu)
