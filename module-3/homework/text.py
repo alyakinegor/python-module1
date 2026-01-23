@@ -1,15 +1,4 @@
-# def text(text: str, *words):
-#     li = text.split(' ')
-#     print(words)
-#     for el in li:
-#         if el in words:
-#             index = li.index(el)
-#             li.pop(index)
-#             li.insert(index, el.capitalize())
-#             print(el)
-#     print(' '.join(li))
 
-# text('hello world. what a nice day!', 'hello', 'world')
 
 def txt(s: str, *wrd: list):
     res = s

@@ -15,4 +15,5 @@ def count_sentenses(text):
     return c
 
 
+
 print(count_sentenses('hello world. what a nice day! aaaa bbbb... aaaa bb.'))
