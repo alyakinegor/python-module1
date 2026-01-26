@@ -7,6 +7,7 @@ obj = {
 }
 c = 0 
 new = s
+
 for el in s[:-1]:
     print(new)
     if el == obj.get(s[c+1]):
