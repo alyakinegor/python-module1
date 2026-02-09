@@ -20,23 +20,22 @@ def put_horse(a, b):
     board[y][x] = j
     j += 1
 
-put_horse(1, 8)
 
-def show():
-    for i in board:
-        print(i)
-# def func():
-#     global x, y, j, curr_x, curr_y
-while True:
+
+
+def func():
+    global x, y, j, curr_x, curr_y
     for i in v:
         x = curr_x + i[0]
         y = curr_y + i[1]
+        print(x, curr_x)
         if len(board) > y and y >= 0 and len(board[0]) > x and x >= 0:
             if board[y][x] == 0:
                 board[y][x] = j
+                curr_x = x
+                curr_y = y
                 j += 1
-            curr_x = x
-            curr_y = y
+                break
         else:
             x = curr_x
             y = curr_y
@@ -44,9 +43,11 @@ while True:
     for el in board:
         arr.extend(el)
     if 0 not in arr:
-        break
-    show()
-    print('-----------------------------------')
+        return
+    else:
+        func()
 
-
-
+put_horse(1, 8)
+func()
+for i in board:
+    print(i)
