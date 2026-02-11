@@ -23,7 +23,7 @@ def dubles():
     for el in obj_mail.values():
         if len(el) > 1:
             d_mail.extend(el)
-    for i in obj_phones.values():
+    for i in obj_phones.values(): 
         if len(i) == 1 and list(i)[0] not in d_mail:
             no_d.append(list(i)[0])
     print(f'дубли по телефонам:{d_phone}')
@@ -31,5 +31,5 @@ def dubles():
     print(f'без дублей:{no_d}')
     print(f'количество: {len(no_d)}')
 
-    
+'aa'.zfill
 dubles()

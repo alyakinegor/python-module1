@@ -9,8 +9,7 @@ def buble_sort(arr):
                 arr[j+1], arr[j] = arr[j], arr[j+1]
                 swp = True
         if not swp:
-            break
+            break 
 
-    return arr
-
-print(buble_sort(arr))
+buble_sort(arr)
+print(arr)
