@@ -46,6 +46,7 @@ sensor3,2024-01-03,38
 
 7. Записать подробный отчёт в файл sensors_report.txt.
 """
+
 logs = ['sensor1,2024-01-01,22',
         'sensor1,2024-01-01,27',
         'sensor2,2024-01-01,19',
@@ -94,4 +95,4 @@ for key in dates.keys():
    if dates[key] > max_average_temp:
       max_average_temp = dates[key]
       day = key
-print(day)
+print()
