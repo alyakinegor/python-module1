@@ -1,0 +1,5 @@
+{'Room-A': {'total': 5, 'confirmed': 4, 'employees': {'Павел', 'Олег', 'Мария', 'Иван'}}, 'Room-B': {'total': 4, 'confirmed': 2, 'employees': {'Мария', 'Нина', 'Иван'}}, 'Room-C': {'total': 2, 'confirmed': 2, 'employees': {'Мария', 'Нина'}}, 'Room-D': {'total': 1, 'confirmed': 1, 'employees': {'Нина'}}}
+{'2026-03-10': 1, '2026-03-11': 2}
+{'Иван': {'hours': 3, 'rooms': {'Room-A', 'Room-B'}}, 'Олег': {'hours': 1, 'rooms': {'Room-A'}}, 'Нина': {'hours': 3, 'rooms': {'Room-C', 'Room-B', 'Room-D'}}, 'Мария': {'hours': 1, 'rooms': {'Room-C'}}, 'Павел': {'hours': 1, 'rooms': {'Room-A'}}}
+сотрудники с двойным бронированием: {'Нина', 'Иван'}
+топ-комната: Room-A, день с максимумом отмен: 2026-03-11

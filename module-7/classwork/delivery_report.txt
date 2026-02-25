@@ -1,0 +1,5 @@
+{'North': {'total': 3, 'delayed': 2, 'delay_rate': 66}, 'East': {'total': 2, 'delayed': 1, 'delay_rate': 50}, 'West': {'total': 2, 'delayed': 1, 'delay_rate': 50}, 'South': {'total': 2, 'delayed': 1, 'delay_rate': 50}}
+{'Miami', 'Dallas', 'Boston', 'Chicago', 'Atlanta'}
+['SHP-1002']
+Склад с самым большим количеством просрочек: North
+{'Chicago': 55, 'Boston': 40, 'Dallas': 60, 'Miami': 30}

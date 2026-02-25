@@ -1,0 +1,4 @@
+{'IT': {'total': 4, 'approved': 2, 'pending': 0}, 'HR': {'total': 2, 'approved': 1, 'pending': 1}, 'Finance': {'total': 2, 'approved': 1, 'pending': 1}}
+{'Док-станция', 'Клавиатура', 'Мышь', 'Монитор', 'Гарнитура', 'Ноутбук'}
+['Иванов']
+Клавиатура
