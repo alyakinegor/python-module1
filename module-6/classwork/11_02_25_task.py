@@ -110,12 +110,13 @@ def break_before_sms():
             if (arr[i+1] - arr[i]) > a:
                 a = arr[i+1] - arr[i]
         res[el] = a
+
     m = 0
     user = ''
-    for i in res.keys():
-        if res[i] > m:
-            m = res[i]
-            user = i
+    for key in res.keys():
+        if res[key] > m:
+            m = res[key]
+            user = key
     return f'{res}, Пользователь с самым большим перерывом: {user}'
 
 
