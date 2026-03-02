@@ -23,6 +23,11 @@ class Employee(EmployeeBase):
         if not isinstance(other, Employee):
             return NotImplemented
         return self.emp_id == other.emp_id
+    
+    def __lt__(self, other):
+        if not isinstance(other, Employee):
+            return NotImplemented
+        return self.salary < other.salary
     def compensation(self):
         return self.salary
     # def info(self):
