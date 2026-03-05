@@ -1,0 +1,12 @@
+2026-03-10,Room-A,09:00,Иван,Project,confirmed
+2026-03-10,Room-A,09:00,Мария,HR,cancelled
+2026-03-10,Room-A,10:00,Олег,Sales,confirmed
+2026-03-10,Room-B,09:00,Иван,Project,confirmed
+2026-03-10,Room-B,09:00,Нина,Finance,confirmed
+2026-03-10,Room-C,11:00,Мария,HR,confirmed
+2026-03-11,Room-A,09:00,Иван,Project,confirmed
+2026-03-11,Room-A,09:00,Павел,Support,confirmed
+2026-03-11,Room-B,10:00,Мария,HR,cancelled
+2026-03-11,Room-B,10:00,Мария,HR,cancelled
+2026-03-11,Room-C,10:00,Нина,Finance,confirmed
+2026-03-11,Room-D,10:00,Нина,Finance,confirmed
