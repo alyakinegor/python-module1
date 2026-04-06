@@ -418,8 +418,30 @@ class Document:
         return self.state.publish(self)
     
 doc = Document()
-print(doc.publish())
-print(doc.publish())
+# print(doc.publish())
+# print(doc.publish())
 
-print(doc.publish())
+# print(doc.publish())
 
+# Strategy
+
+class StandardDelivery:
+    def calculate(self, weight):
+        return 200 + weight * 10
+    
+class ExpressDelivery:
+    def calculate(self, weight):
+        return 500 + weight * 20
+    
+class PickupDelivery:
+    def calculate(self, weight):
+        return 0
+
+class DeliveryCalc:
+    def __init__(self, stategy):
+        self.stategy = stategy
+    
+    def get_price(self, weight):
+        return self.stategy.calculate(weight)
+    
+print(DeliveryCalc(PickupDelivery()).get_price(10))
