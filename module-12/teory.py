@@ -445,3 +445,52 @@ class DeliveryCalc:
         return self.stategy.calculate(weight)
     
 print(DeliveryCalc(PickupDelivery()).get_price(10))
+
+#Template Method
+
+class ReportTemplate:
+    def build(self):
+        data = self.fetch_data()
+        return self.format_data()
+    
+    def fetch_data(self):
+        raise NotImplementedError
+    
+    def format_data(self, data):
+        raise NotImplementedError
+    
+class SalesReport(ReportTemplate):
+    def fetch_data(self):
+        return [100, 200, 300]
+    def format_data(self):
+        return f'Сумма продаж: {sum(data)}'
+
+# Visitor
+class Book:
+    def __init__(self, title, price):
+        self.title = title
+        self.price = price
+
+    def accept(self, visitor):
+        return visitor.visit_book(self)
+    
+class Course:
+    def __init__(self, title, price):
+        self.title = title
+        self.price = price
+
+    def accept(self, visitor):
+        return visitor.visit_course(self)
+    
+class DiscountVisitor:
+    def visit_book(self, book):
+        return f'{book.title}: {book.price * 0.9}'
+    
+    def visit_course(self, course):
+        return f'{course.title}: {course.price * 0.2}'
+    
+
+visitor = DiscountVisitor()
+items = [Book('book', 1000), Course('course', 5000)]
+for el in items:
+    print(el.accept(visitor))
