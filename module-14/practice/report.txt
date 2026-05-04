@@ -1,0 +1,4 @@
+
+Заказ: [Hotdog(ingredients=['dough', 'sausage', 'ketchup'], price=210), Hotdog(ingredients=['dough', 'sausage', 'mayonaise'], price=220)]
+ Цена: 1474.88
+---------------------------
