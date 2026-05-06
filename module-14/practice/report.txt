@@ -1,4 +1,2 @@
-
-Заказ: [Hotdog(ingredients=['dough', 'sausage', 'ketchup'], price=210), Hotdog(ingredients=['dough', 'sausage', 'mayonaise'], price=220)]
- Цена: 1474.88
----------------------------
+       == Формат заявок: "id | employeeName | department | equipmentType | inventoryNumber | problemDescription | priority | status" ==
+CASE-1 | 1 | 1 | 1 | 1 | 1 | средний | новая
